@@ -1,38 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
+
+.showBottomBorder:hover > .span {
+	visibility: visible;
+	width: 100%;
+}
+
+.span {
+	visibility: hidden;
+	width: 0px;
+	transition: width 2s;
+}
+.showDropdown:hover .dropdownMenu {
+	display: block;
+	visibility: visible;
+}
+
+.dropdownMenu {
+	/* display: none;s */
+	visibility: hidden;
+}
+
+.hideScrollBar::-webkit-scrollbar {
+	display: none;
+}
+/* .diamondGallery {
+	display: grid !important;
+	grid-template-columns: repeat(6, 250px) !important;
+	background: #000;
+}
+.diamondGallery img {
+	grid-column: span 2;
+}
+.diamondGallery img:nth-of-type(4) {
+	grid-column: 2 / span 2;
+} */
